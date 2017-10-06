@@ -78,7 +78,8 @@ points(as.POSIXct(as.character(subData$DateTime)), sm3_vector, type = "l",
        col = "blue")
 ## adding a legend in the topright of the plot
 legend("topright", c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), 
-       lty = c(1,1,1),lwd = c(2.5,2.5), col=c("black", "red", "blue"))
+       lty = c(1,1,1),lwd = c(2.5,2.5), col=c("black", "red", "blue"), 
+       bty = "n")
 
 ## ******* adding Graph 4 ******** ##
 plot(as.POSIXct(as.character(subData$DateTime)), grp_vector, type = "l", 
